@@ -1,0 +1,49 @@
+body {
+  margin:0;
+  position:absolute;
+}
+
+/* NAVBAR */
+#header {
+  position:fixed;
+  display:flex;
+  justify-content:center;
+  background:#D1F5FF;
+  width:100%;
+  height:3rem;
+}
+
+#header__upper{
+  width:100%;
+}
+
+.header-img {
+  background:url('https://imgur.com/fNb7fzq');
+
+}
+#nav-bar {
+  position:absolute;
+}
+
+.nav-bar__menu{
+  padding:0;
+}
+
+.nav-link {
+  display:inline-block;
+}
+
+#about {
+
+}
+
+/* MAIN */
+main {
+  padding-top:3rem;
+}
+
+
+/* DESKTOP VIEW */
+@media (min-width:600px) {
+
+}
