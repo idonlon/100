@@ -1,45 +1,113 @@
+ /* / _/__  ___  / /_
+   / _/ _ \/ _ \/ __/
+  /_/ \___/_//_/\__/ */
+                   
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro|Major+Mono+Display|Michroma');
+
 body {
   margin:0;
   position:absolute;
+  width:100%;
 }
 
-/* NAVBAR */
+/*COLORS:
+Header Nav Links: #231942*/
+/*orange header BG:#e07a5f*/
+
+ /*__               __       
+  / /  ___ ___ ____/ /__ ____
+ / _ \/ -_) _ `/ _  / -_) __/
+/_//_/\__/\_,_/\_,_/\__/_/   
+                           */
 #header {
   position:fixed;
   display:flex;
   justify-content:center;
-  background:#D1F5FF;
+  background:#e07a5f;
   width:100%;
-  height:3rem;
+  height:5rem;
 }
 
 #header__upper{
-  width:100%;
+  margin-right:2rem;
 }
 
 .header-img {
-  background:url('https://imgur.com/fNb7fzq');
-
+  width:80%;
+  margin:auto;
 }
+
 #nav-bar {
   position:absolute;
+  width:100%;
 }
 
+
 .nav-bar__menu{
-  padding:0;
+  margin-top:3.2rem;
+
 }
 
 .nav-link {
+  position: relative;
   display:inline-block;
+
 }
 
+.nav-link a{
+font-family: 'Anonymous Pro', monospace;
+  font-weight:700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color:#231942;
+}
+/*
+       __             __ 
+ ___ _/ /  ___  __ __/ /_
+/ _ `/ _ \/ _ \/ // / __/
+\_,_/_.__/\___/\_,_/\__/ */
+.tagline {
+font-family: 'Michroma', sans-serif;
+   font-style:italic;
+}
+
+.title_text {
+  font-family: 'Michroma', sans-serif;
+  color:#f2cc8f;
+}
+.title_about {
+  font-size:5rem;
+  color:;
+}
+                        
 #about {
 
 }
 
 /* MAIN */
 main {
+  width:100%;
   padding-top:3rem;
+}
+
+.greenBG {
+  background: #81b29a;
+}
+.darkBG {
+  background:#5f5aa2;
+}
+
+.lightBG {
+  background:#c6d4ff;
+  }
+
+  .peachBG {
+    background:#ecb8a5;
+  }
+
+/*  CONNECT*/
+.white_text {
+  color:#f4f1de;
 }
 
 
