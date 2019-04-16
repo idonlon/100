@@ -58,6 +58,7 @@ Header Nav Links: #231942*/
 }
 
 .nav-link a{
+  /* makes sure links don't break onto new lines but obey padding */
   display:inline-block;
 font-family: 'Rubik', monospace;
  font-weight:700;
@@ -101,11 +102,19 @@ font-family: 'Michroma', sans-serif;
 /* MAIN */
 main {
  width:100%;
- padding-top:5rem;
+ padding-top:11rem;
 }
 
+section: {
+  width:auto;
+}
 .whiteBG {
  background: #f4f1de;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    /* centers everything in main */
+    text-align: center;
 }
 .darkBG {
  background:#5f5aa2;
