@@ -2,92 +2,133 @@
   / _/ _ \/ _ \/ __/
  /_/ \___/_//_/\__/ */
 
-@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro|Major+Mono+Display|Michroma');
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400,500,600|Karla:700|Rubik:400i,500,700');
 
 body {
  margin:0;
  position:absolute;
  width:100%;
+ height:100%;
+ min-height:100%;
+ text-rendering: optimizeLegibility;
 }
 
-li, p {
- font-family: 'Rubik', sans-serif;
+li, a, h2 {
+ font-family: 'Karla', sans-serif;
+ margin:0;
+}
+
+p {
+   font-family: 'Rubik', sans-serif;
+  font-size: .8rem;
+}
+
+h1, h3 {
+  font-family: "Exo 2", sans-serif;
+  margin:0;
 }
 /*COLORS:
-Header Nav Links: #231942*/
-/*nav bar BG:#e5d4ed*/
-
+Header Nav Links: #020887*/
+/*nav bar BG:#98d2eb
+main/white bg:f0f3f5*
+h1/titletext:98d2eb/
+plan table: b2b1cf
 /*__               __
  / /  ___ ___ ____/ /__ ____
 / _ \/ -_) _ `/ _  / -_) __/
 /_//_/\__/\_,_/\_,_/\__/_/
                           */
-#header {
+header {
  position:fixed;
- display:flex;
- justify-content:center;
- background:#e5d4ed;
+
+ justify-content: center;
+ background:#98d2eb;
  width:100%;
  height:9rem;
+ display: flex;
+flex-direction: column;
+align-items: flex-start;
 }
 
 #header__upper{
- margin-right:2rem;
+align-self: center;
 }
 
 .header-img {
- width:130%;
- margin:auto;
+ width:90%;
+
 }
 
 #nav-bar {
- position:absolute;
- width:100%;
- text-align:center;
+align-self: center;
 }
 
+/* ul */
 .nav-bar__menu{
-  display:inline-block;
-   list-style-type: none;
- margin-top:6.2rem;
+
 }
 
 .nav-link {
- position: relative;
- display:inline;
+
 }
 
 .nav-link a{
   /* makes sure links don't break onto new lines but obey padding */
-  display:inline-block;
-font-family: 'Rubik', monospace;
- font-weight:700;
- font-size:1.8rem;
- text-transform: uppercase;
- text-decoration: none;
- color:#231942;
+
 }
 
+/*
+      __             ___
+    / /__ ____  ___/ (_)__  ___ _
+  / / _ `/ _ \/ _  / / _ \/ _ `/
+/_/\_,_/_//_/\_,_/_/_//_/\_, /
+                       /___/   */
+#landing {
+  padding-bottom:2rem;
+  }
+
+.model {
+  color:#b2b1cf;
+  padding:3rem 0rem;
+}
+
+#sidekick {
+ max-width:98%;
+ height:auto;
+ max-height:90%;
+}
+
+.tagline {
+  font-style:italic;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size:3.2rem;
+  color:#38369a;
+  padding:0 8rem;
+}
 
 /*
       __             __
 ___ _/ /  ___  __ __/ /_
 / _ `/ _ \/ _ \/ // / __/
 \_,_/_.__/\___/\_,_/\__/ */
-#sidekick {
- max-width:98%;
- height:auto;
- max-height:90%;
-}
-.tagline {
-font-family: 'Michroma', sans-serif;
-  font-style:italic;
-  font-size:1.3rem;
+
+#about {
+  background-color: #e1f2fe;
 }
 
+ #about p {
+   color:#000;
+ }
+
+.description {
+   padding:0rem 4rem;
+   line-height: 1.5rem;
+ }
+
 .title_text {
- font-family: 'Michroma', sans-serif;
- color:#f2cc8f;
+font-style:italic;
+ color:#98d2eb;
 }
 
 .title_about {
@@ -95,49 +136,32 @@ font-family: 'Michroma', sans-serif;
  color:;
 }
 
-#about {
-
-}
 
 /* MAIN */
 main {
  width:100%;
- padding-top:11rem;
+ padding-top:9rem;
+   text-align: center;
 }
 
-section: {
-  width:auto;
-}
-.whiteBG {
- background: #f4f1de;
-    color: white;
-    font-weight: bold;
-    font-size: 2em;
-    /* centers everything in main */
-    text-align: center;
-}
-.darkBG {
- background:#5f5aa2;
+/*              __ _
+  ___ ___ ____/ /_(_)__  ___  ___
+ (_-</ -_) __/ __/ / _ \/ _ \(_-<
+/___/\__/\__/\__/_/\___/_//_/___/
+*/
+.whiteDiv {
+background-color: #f0f3f5;
+padding:1rem 0rem;
 }
 
-.lightBG {
- background:#c6d4ff;
- }
-
-.lightPurpleBG {
- background:#e5d4ed;
+.blueDiv {
+background-color: #e1f2fe;
+padding:1rem 0rem;
 }
 
- .peachBG {
-   background:#ecb8a5;
- }
 
-/*  CONNECT*/
-.white_text {
- color:#f4f1de;
-}
-/*
-        __
+
+  /*     __
   ___  / /__ ____  ___
  / _ \/ / _ `/ _ \(_-<
 / .__/_/\_,_/_//_/___/
@@ -145,6 +169,7 @@ section: {
 */
 
 .plans {
+  background-color: #e1f2fe;
  display:flex;
  justify-content: center;
  flex-wrap:wrap;
@@ -155,7 +180,11 @@ section: {
      text-align: center;
      margin: 10px;
      padding:1rem;
-     background-color:#e5d4ed;
+     background-color:#b2b1cf;
+}
+
+.plan_perk {
+  font-size: 1rem;
 }
 
 /* DESKTOP VIEW */
