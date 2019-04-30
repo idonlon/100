@@ -54,8 +54,10 @@ align-items: flex-start;
 align-self: center;
 }
 
-.header-img {
- width:90%;
+#header-img {
+ width:20%;
+ max-width: 45%;
+ height:auto;
 
 }
 
