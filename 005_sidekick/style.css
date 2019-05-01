@@ -42,13 +42,13 @@ plan table: b2b1cf
 header {
  position:fixed;
 
- justify-content: center;
+ /* justify-content: center; */
  background:#98d2eb;
- width:100%;
+ /* width:100%; */
  height:9rem;
- display: flex;
+ /* display: flex;
 flex-direction: column;
-align-items: flex-start;
+align-items: flex-start; */
 }
 
 #header__upper{
@@ -56,9 +56,9 @@ align-self: center;
 }
 
 #header-img {
- width:20%;
- max-width: 45%;
- height:auto;
+ /* width:20%; */
+ /* max-width: 45%;
+ height:auto; */
 
 }
 
@@ -107,7 +107,7 @@ align-self: center;
   text-transform: uppercase;
   font-size:3.2rem;
   color:#38369a;
-  padding:0 8rem;
+  /* padding:0 8rem; */
 }
 
 /*

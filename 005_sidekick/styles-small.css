@@ -1,6 +1,25 @@
 @media (max-width:380px) {
   body{
-    background-color: #000;
+    width:100%;
+    margin:0;
+  }
 
+  header {
+    position: fixed;
+    width:100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-justify-content: center;
+    justify-content:center;
+  }
+
+
+  #header-img {
+    height:auto;
+    max-width:7rem;
+    flex:1 auto;
+    align-self: center;
   }
 }
